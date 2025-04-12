@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matnni Ovozda O‘qish</title>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-indigo-200 to-pink-200 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-3xl shadow-xl max-w-md w-full space-y-6">
+    <h1 class="text-3xl font-bold text-center text-gray-800">Ovozli O‘qish</h1>
+    
+    <textarea id="inputText" rows="4" placeholder="Matnni kiriting..." 
+      class="w-full p-4 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+    </textarea>
+
+    <div>
+      <label for="voiceLang" class="block text-lg text-gray-700">Tilni tanlang</label>
+      <select id="voiceLang" class="w-full p-3 mt-2 rounded-xl border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+        <option value="en-US">English</option>
+        <option value="uz-UZ">O‘zbekcha</option>
+        <option value="ru-RU">Русский</option>
+        <option value="fr-FR">Français</option>
+        <option value="es-ES">Español</option>
+        <option value="de-DE">Deutsch</option>
+        <option value="it-IT">Italiano</option>
+        <option value="pt-PT">Português</option>
+        <option value="ja-JP">日本語</option>
+        <option value="ko-KR">한국어</option>
+        <option value="ar-SA">العربية</option>
+        <option value="zh-CN">中文</option>
+        <option value="hi-IN">हिंदी</option>
+        <option value="tr-TR">Türkçe</option>
+        <option value="pl-PL">Polski</option>
+        <option value="nl-NL">Nederlands</option>
+        <option value="sv-SE">Svenska</option>
+        <option value="da-DK">Dansk</option>
+        <option value="no-NO">Norsk</option>
+        <option value="fi-FI">Suomi</option>
+        <option value="cs-CZ">Čeština</option>
+        <option value="sk-SK">Slovenčina</option>
+        <option value="ro-RO">Română</option>
+        <option value="bg-BG">Български</option>
+        <option value="hu-HU">Magyar</option>
+        <option value="sr-SR">Srpski</option>
+        <option value="hr-HR">Hrvatski</option>
+        <option value="sl-SI">Slovenščina</option>
+        <option value="uk-UA">Українська</option>
+        <option value="el-GR">Ελληνικά</option>
+        <option value="he-IL">עברית</option>
+        <option value="id-ID">Bahasa Indonesia</option>
+        <option value="ms-MY">Bahasa Melayu</option>
+        <option value="th-TH">ภาษาไทย</option>
+        <option value="vi-VN">Tiếng Việt</option>
+        <option value="fi-FI">Suomi</option>
+        <option value="lt-LT">Lietuvių</option>
+        <option value="lv-LV">Latviešu</option>
+        <option value="et-EE">Eesti</option>
+        <option value="gl-ES">Galego</option>
+        <option value="ca-ES">Català</option>
+        <option value="eu-ES">Euskara</option>
+        <option value="sq-AL">Shqip</option>
+        <option value="mk-MK">Македонски</option>
+        <option value="tl-PH">Filipino</option>
+        <option value="ne-NP">नेपाली</option>
+        <option value="bn-BD">বাংলা</option>
+        <option value="pa-IN">ਪੰਜਾਬੀ</option>
+        <option value="mr-IN">मराठी</option>
+        <option value="gu-IN">ગુજરાતી</option>
+        <option value="te-IN">తెలుగు</option>
+        <option value="ta-IN">தமிழ்</option>
+      </select>
+    </div>
+
+    <button id="speakBtn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl transition transform hover:scale-105">
+      Ovozda o‘qish
+    </button>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
